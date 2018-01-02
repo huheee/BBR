@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+        <meta name="format-detection" content="telephone=no">
+ 		<meta name="msapplication-tap-highlight" content="no">
+		
+  		<script type="text/javascript" src="js/index.js"></script>
+
+
+		<link rel="stylesheet" href="css/themes/CU.min.css" />
+		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />  
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyBYIDbXhYCSljnDfwkmsAAzS97SOzi2gh8&language=en"></script>
+        <script type="text/javascript" src="js/detailIndex.js"></script>
+        
+        <title>Hello World</title>
+
+        
+    </head>
+    <body> 
+
+		<div data-role="page" id="detail"  data-theme="d">
+			<div data-role="header">
+				<a href="#" data-icon="back" data-rel="back" title="Go back">뒤로</a>
+				<h1>세부 정보</h1>
+				<a href="#pop1" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop"  data-rel="popup" title="Go back">이용방법</a>
+				
+			</div>
+			<div data-role="content">
+				<div id="map" style="width:100%;height: 300px;"></div>
+				<a href="#" onClick="setPathMap();" class="ui-btn">경로 탐색</a>
+				<br>
+				<ul data-role="listview" id="detail_div">
+				</ul>
+				<div data-role="popup" id="pop1">
+					<center><h3>대여소 이용 방법!</h3></center>
+					<p>1. <strong>신분증</strong>을 챙긴다.</p>
+					<p>2. <strong>운영시간</strong>에 맞춰 대여소를 찾아간다.</p>
+					<p>3. 신분증 확인 후 <strong>자전거를 빌린다</strong>.</p>
+					<p>4. <strong>대여 시간</strong>동안 열심히 탄다.</p>
+				</div>
+				
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<center>
+					<div id="favbtn">
+					</div>
+				</center>
+			</div>
+		</div>
+
+	<script>
+
+	</script>
+
+
+</body>
+</html>
